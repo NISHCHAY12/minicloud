@@ -1,0 +1,68 @@
+.room-join-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 28px;
+  padding: 16px 18px;
+  background: #eef7f6;
+  border: 1px solid #cde4e1;
+  border-radius: 7px;
+}
+.room-join-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #214b4a;
+}
+.room-join-copy {
+  min-width: 0;
+}
+.join-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+.join-form input {
+  width: 112px;
+  border-color: #a9c9c6;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding: 9px 10px;
+}
+.join-button {
+  border: 0;
+  background: #147774;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 13px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.join-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.room-join-panel .small {
+  margin-top: 4px;
+}
+@media (max-width: 620px) {
+  .room-join-panel {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .join-form {
+    width: 100%;
+  }
+  .join-form input {
+    flex: 1;
+  }
+  .join-button {
+    white-space: nowrap;
+  }
+}
